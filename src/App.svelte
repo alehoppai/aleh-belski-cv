@@ -1,6 +1,32 @@
 <script lang="ts">
   import "./app.css";
+
+  import Contacts from "./lib/Contacts.svelte";
+  import TechSkills from "./lib/TechSkills.svelte";
+  import Summary from "./lib/Summary.svelte";
+  import Header from "./lib/Header.svelte";
+  import Education from "./lib/Education.svelte";
+	import AdditionalInfo from "./lib/AdditionalInfo.svelte";
+	import ProfessionalExperience from "./lib/ProfessionalExperience.svelte";
 </script>
 
-<h1>Aleh Belski </h1>
-<h3>Fullstack Software Developer</h3>
+<div class="flex flex-col p-12">
+  <Header />
+
+  <div class="my-12 h-1px border"></div>
+
+  <div class="flex flex-row gap-12 w-full">
+    <div class="flex flex-col gap-6 w-1/3">
+      <Contacts />
+      <TechSkills />
+      <Education />
+      <AdditionalInfo />
+    </div>
+    <div class="flex flex-col w-2/3">
+      <Summary />
+      <div class="my-6 h-1px border"></div>
+      <ProfessionalExperience />
+    </div>
+  </div>
+</div>
+
