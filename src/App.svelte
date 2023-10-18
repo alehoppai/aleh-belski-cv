@@ -10,7 +10,7 @@
 	import ProfessionalExperience from "./lib/ProfessionalExperience.svelte";
 </script>
 
-<div class="flex flex-col p-12">
+<div class="flex flex-col p-12 max-w-[1200px] justify-self-center align-self-center">
   <Header />
 
   <div class="my-12 h-1px border"></div>
