@@ -31,7 +31,7 @@
 	];
 
 	const copyToClipboard = () => {
-		navigator.clipboard.writeText("");
+		navigator.clipboard.writeText("Tel: " + tel + "\nEmail: " + email + "\nLocation: " + location + "\nLinkedIn: " + linkedInUri);
 	};
 </script>
 
