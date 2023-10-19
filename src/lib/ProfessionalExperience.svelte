@@ -97,7 +97,7 @@
         <h3 class="text-xl font-bold">Professional Experience</h3>
         <div class="flex flex-row items-center justify-between gap-2">
             <Icon src={Funnel} class="w-4 h-4" />
-            <input placeholder="Project tech filter" type="text" class="border-b" bind:value={filterQuery}>
+            <input placeholder="Project tech filter" type="text" class="p-2 border-b border-slate-200 dark:border-slate-800 bg-transparent" bind:value={filterQuery}>
         </div>
     </div>
 
@@ -105,7 +105,7 @@
         <table class="table-fixed border-collapse text-left my-4">
             <thead>
                 <tr>
-                    <th class="py-2 bg-slate-100" colspan="2">{job.title}</th>
+                    <th class="py-2 bg-slate-200 dark:bg-slate-800" colspan="2">{job.title}</th>
                 </tr>
             </thead>
             <tbody>
