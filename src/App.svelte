@@ -13,19 +13,19 @@
 <div
 	class="bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-slate-50 w-full flex flex-col items-center"
 >
-	<div class="flex flex-col p-12 max-w-[1200px]">
+	<div class="flex flex-col p-2 lg:p-12 max-w-full lg:max-w-[1280px]">
 		<Header />
 
 		<div class="my-12 h-1px border border-slate-200 dark:border-slate-800"></div>
 
-		<div class="flex flex-row gap-12 w-full">
-			<div class="flex flex-col gap-6 w-1/3">
+		<div class="flex lg:flex-row flex-col gap-12 w-full">
+			<div class="flex flex-col gap-6 lg:w-1/3">
 				<Contacts />
 				<TechSkills />
 				<Education />
 				<AdditionalInfo />
 			</div>
-			<div class="flex flex-col w-2/3">
+			<div class="flex flex-col lg:w-2/3">
 				<Summary />
 				<div class="my-6 h-1px border border-slate-200 dark:border-slate-800"></div>
 				<ProfessionalExperience />
