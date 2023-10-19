@@ -32,7 +32,7 @@
 	];
 
 	const copyToClipboard = () => {
-		navigator.clipboard.writeText("Tel: " + tel + "\nEmail: " + email + "\nLocation: " + location + "\nLinkedIn: " + linkedInUri);
+		navigator.clipboard.writeText("**PRIORITY CONTACT**\nALEH BELSKI, Fullstack Software Developer\nTel: " + tel + "\nEmail: " + email + "\nLocation: " + location + "\nLinkedIn: " + linkedInUri);
 	};
 </script>
 
@@ -40,7 +40,7 @@
 	<div class="flex flex-row items-center justify-between">
 		<h3 class="text-xl font-bold">CONTACTS</h3>
 		<button
-			class="w-10 h-10 p-2 transition-colors hover:bg-slate-300 no-print"
+			class="w-10 h-10 p-2 transition-colors hover:bg-slate-300 dark:hover:bg-slate-700 no-print"
 			on:click={copyToClipboard}
 			title="Copy contacts"
 		>
