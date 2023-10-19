@@ -15,10 +15,10 @@
     <ul>
         {#each techSkillsData as skill}
             <li class="my-4">
-                <strong>{skill.title}:</strong>
+                <h4 class="text font-semibold">{skill.title}:</h4>
 
                 {#each skill.skills as s, i}
-                    <span>{s}{i !== skill.skills.length - 1 && ","}&nbsp;</span>
+                    <span>{s}{i !== skill.skills.length - 1 ? "," : ""}&nbsp;</span>
                 {/each}
             </li>
         {/each}
