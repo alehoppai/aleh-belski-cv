@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Panel from "./Panel.svelte";
+	import List from "./List.svelte";
 
 	const additionalInfoData = [
 		{ title: "Languages", text: "BY, EN, RU. Basic proficiency in Polish." },
@@ -12,12 +13,8 @@
 
 <Panel>
 	<h3 class="text-xl font-bold">Additional Info</h3>
-	<ul>
-		{#each additionalInfoData as info}
-			<li class="my-4">
-				<strong>{info.title}:</strong>
-				<span>{info.text}</span>
-			</li>
-		{/each}
-	</ul>
+	<List data={additionalInfoData} let:item>
+		<h4 class="text font-semibold">{item.title}:</h4>
+		<span>{item.text}</span>
+	</List>
 </Panel>

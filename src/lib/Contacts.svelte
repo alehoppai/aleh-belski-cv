@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Icon, Phone, Envelope, Link, MapPin, Clipboard } from "svelte-hero-icons";
 	import Panel from "./Panel.svelte";
+	import List from "./List.svelte";
 
 	const tel = "+48572881022";
 	const email = "aleh_belski@outlook.com";
@@ -47,19 +48,15 @@
 		</button>
 	</div>
 
-	<ul>
-		{#each contactsData as contact}
-			<li class="my-4">
-				<a
-					class="flex flex-row gap-2"
-					href={contact.link}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Icon class="w-6 h-6" src={contact.icon} />
-					<span>{contact.text}</span>
-				</a>
-			</li>
-		{/each}
-	</ul>
+	<List data={contactsData} let:item>
+		<a
+			class="flex flex-row gap-2"
+			href={item.link}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<Icon class="w-6 h-6" src={item.icon} />
+			<span>{item.text}</span>
+		</a>
+	</List>
 </Panel>

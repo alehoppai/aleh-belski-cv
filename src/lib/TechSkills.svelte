@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Panel from "./Panel.svelte";
+	import List from "./List.svelte";
 
 	const techSkillsData = [
 		{ title: "Frontend", skills: ["Svelte-kit", "Tailwindcss", "React/Next", "Sass"] },
@@ -12,15 +13,11 @@
 
 <Panel>
 	<h3 class="text-xl font-bold">Technical Skills:</h3>
-	<ul>
-		{#each techSkillsData as skill}
-			<li class="my-4">
-				<h4 class="text font-semibold">{skill.title}:</h4>
+	<List data={techSkillsData} let:item>
+		<h4 class="text font-semibold">{item.title}:</h4>
 
-				{#each skill.skills as s, i}
-					<span>{s}{i !== skill.skills.length - 1 ? "," : ""}&nbsp;</span>
-				{/each}
-			</li>
+		{#each item.skills as skill, i}
+			<span>{skill}{i !== item.skills.length - 1 ? "," : ""}&nbsp;</span>
 		{/each}
-	</ul>
+	</List>
 </Panel>
