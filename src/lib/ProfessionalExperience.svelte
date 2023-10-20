@@ -130,11 +130,11 @@
 					<td colspan="2"><i>{job.timePeriod}</i></td>
 				</tr>
 				<tr>
-					<th class="w-24">Description</th>
+					<th class="w-24 align-text-top">Description</th>
 					<td>{job.description}</td>
 				</tr>
 				<tr>
-					<th class="w-24">Tech</th>
+					<th class="w-24 align-text-top">Tech</th>
 					<td>{job.tech}</td>
 				</tr>
 			</tbody>
