@@ -93,11 +93,11 @@
 		},
 		{
 			title: "Front-end Developer, Oxagile / Opera",
-			timePeriod: "Dec 2022 - June 2023",
+			timePeriod: "Jul 2023 - Oct 2023",
 			description: "Tasked with bug fixes for the Aria browser extension.",
 			tech: "Typescript, React, Redux, Tailwindcss.",
 		},
-	];
+	].reverse();
 
 	let filterQuery = "";
 </script>

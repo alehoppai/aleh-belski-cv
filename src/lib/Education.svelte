@@ -2,10 +2,7 @@
 	import Panel from "./Panel.svelte";
 	import List from "./List.svelte";
 
-	const educationData = [
-		"High School Diploma",
-		"Completed Military Service",
-	];
+	const educationData = ["High School Diploma", "Completed Military Service"];
 </script>
 
 <Panel bgEnabled>

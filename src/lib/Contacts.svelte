@@ -32,7 +32,16 @@
 	];
 
 	const copyToClipboard = () => {
-		navigator.clipboard.writeText("**PRIORITY CONTACT**\nALEH BELSKI, Fullstack Software Developer\nTel: " + tel + "\nEmail: " + email + "\nLocation: " + location + "\nLinkedIn: " + linkedInUri);
+		navigator.clipboard.writeText(
+			"**PRIORITY CONTACT**\nALEH BELSKI, Fullstack Software Developer\nTel: " +
+				tel +
+				"\nEmail: " +
+				email +
+				"\nLocation: " +
+				location +
+				"\nLinkedIn: " +
+				linkedInUri
+		);
 	};
 </script>
 
@@ -49,12 +58,7 @@
 	</div>
 
 	<List data={contactsData} let:item>
-		<a
-			class="flex flex-row gap-2"
-			href={item.link}
-			target="_blank"
-			rel="noopener noreferrer"
-		>
+		<a class="flex flex-row gap-2" href={item.link} target="_blank" rel="noopener noreferrer">
 			<Icon class="w-6 h-6" src={item.icon} />
 			<span>{item.text}</span>
 		</a>
